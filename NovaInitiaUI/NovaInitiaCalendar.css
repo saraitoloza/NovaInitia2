@@ -1,0 +1,153 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 0.31441048034934493) 0%, rgba(253, 29, 29, 0.3799126637554585) 50%, rgba(252, 176, 69, 0.37772925764192145) 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Verdana, sans-serif;
+    display: grid;
+    height: 100%;
+    margin: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'left header header header header header' 'left middle middle middle middle middle' 'footer footer footer footer footer footer';
+}
+
+.footer {
+    grid-area: footer;
+    backdrop-filter: blur(10px);
+}
+
+.header {
+    grid-area: header;
+}
+
+.wrapper {
+    grid-area: left;
+    margin: 0px;
+    padding-bottom: 200px;
+    box-shadow: 0px 0px 5px 1px rgba(100, 100, 100, 0.295);
+    border-radius: 6px;
+    backdrop-filter: blur(50px);
+    justify-items: center;
+    height: 600px;
+    width: 100%;
+}
+
+.wrapper .nova {
+    padding-left: 28px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    font-family: 'Nova Round', cursive;
+    font-size: 50px;
+    text-shadow: 0px 0px 5px 5px #212122c0;
+    color: rgb(51, 51, 51)
+}
+
+.wrapper .sidebar {
+    display: flex;
+    list-style: none;
+}
+
+.wrapper .sidebar ul li {
+    list-style: none;
+    padding-right: 50px;
+}
+
+.wrapper .sidebar ul li a {
+    color: #212122c0;
+    display: block;
+    padding-bottom: 40px;
+}
+
+.calendar {
+    grid-area: middle;
+    background-color: #ffffff52;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px 2px rgba(185, 185, 185, 0.486);
+    margin-top: -8%;
+    margin-right: 8%;
+    margin-left: 8%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.month {
+    padding: 20px 5px;
+    width: 100%;
+    backdrop-filter: blur(50px);
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: rgb(7, 7, 7);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+    padding-left: 45px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0px;
+    padding-bottom: 20px;
+    background-color: #ffffff46;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background-color: #ffffff75;
+    margin: 0;
+    padding-bottom: 60px;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 64px;
+    color: #777;
+}
+
+.days li .active {
+    padding: 5px;
+    background-color: #ffffffc5;
+    border-radius: 3px;
+    color: #777;
+}

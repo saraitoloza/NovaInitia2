@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nova Initia - Home</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Round&family=Wallpoet&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="NovaInitiaHome.css">
+    <script src="https://kit.fontawesome.com/466e7c7e25.js" crossorigin="anonymous"></script>
+    <script defer src="NovaInitiaHome.js"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+        </div>
+        <div class="wrapper">
+            <h1 class="nova">NI</h1>
+            <div class="sidebar">
+                <ul>
+                    <li><a src="/Login/NovaInitiaHome.html"><i class="far fa-plus-square fa-2x"></i></a></li>
+                    <li><a src="/Login/NovaInitiaCalendar.html"><i class="far fa-calendar-alt fa-2x"></i></a></li>
+                    <li><a href=""><i class="fas fa-archive fa-2x"></i></a></li>
+                    <li><a src="NovaInitiaLogin.html"><i class="fas fa-sign-out-alt fa-2x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="blender">
+            <div class="upload"><a href="#"><i class="fas fa-upload fa-10x"></i></div>
+</div>
+<div class = "patient">
+	<div class="p-container">
+		<div class="patient-header">
+			<h2>New Patient Form</h2>
+		</div>
+		<div class="profile-image">
+		<img src="imageNull.png" height="70px" width="70px">
+		<div class="profileButton">
+		<input type="image" name="profile_photo" id="image" placeholder="imageNull.png"required="" capture>
+		</div>
+		</div>
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="patient-info">
+		<form class= "patient-form">
+			<div class = "fname"><input type="text" name="fname" id="fname-field" placeholder="FIRST NAME"></div>
+			<div class="lname"><input type="text" name="lname" id="lname-field" placeholder="LAST NAME"></div>
+			<div class="mname"><input type="text" name="mname" id="mname-field" placeholder="MI"></div>
+			<div class="dateI"><input type="date" name="dob" id="dob-field" placeholder="MM/DD/YYYY"></div><br>
+			<div class="malebox">
+				<input type="checkbox" name="malebox" id="male" value="Male">
+				<label for ="malebox">Male</label>	
+			</div>
+			<div class="femalebox">
+				<input type="checkbox" name="femalebox" id="female" value="Female">
+				<label for ="falebox">Female</label>	
+			</div>
+			<div class="otherbox">
+				<input type="checkbox" name="otherbox" id="other" value="Other">
+				<label for ="falebox">Other</label>	
+			</div>
+		</form>
+		</div>
+		<div class="contact-info">
+			<form class="contact-form">
+			<div class = "addy"><input type="text" name="street" id="street-field" placeholder="123 AEROSPACE BLVD"></div>
+			<div class = "city"><input type="text" name="city" id="city-field" placeholder="DAYTONA BEACH"></div>
+			<div class = "state"><input type="text" name="state" id="state-field" placeholder="FL"></div>
+			<div class = "zip"><input type="text" name="zipcode" id="zip-field" placeholder="32119"></div>
+			<div class = "phone"><input type="text" name="phone" id="phone-field" placeholder="555-555-5555"></div>
+			<div class = "email"><input type="text" name="email" id="email-field" placeholder="nova1@gmail.com"></div>
+			</form>
+			<div class="image-form">
+			<div class="image-header"></div>
+			<div class="front-image">
+			<img src="imageNull.png" height="70px" width="70px"></div>
+			<input type="image" id="front">
+			<div class="sider-image">
+			<img src="imageNull.png" height="70px" width="70px"></div>
+			<input type="image" id="right">
+			<div class="sidel-image">
+			<img src="imageNull.png" height="70px" width="70px"></div>
+			<input type="image" id="left">
+			<div class="additional-comments"><input type="text" id="comments" placeholder="patient comments and requests"></div>
+			<div class="submit"><input type="submit" value="Submit">
+			</div>
+			</div>
+		
+
+		</div>
+	
+	</div>
+</div>
+<div class="footer"></div>
+
+</div>
+</html>
