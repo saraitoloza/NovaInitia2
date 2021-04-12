@@ -212,7 +212,7 @@
             "id": "Columellar_Break_Point",
             "name": "Columellar Break Point",
             "abbrv": "c",
-            "list": "Y",
+            "list": "F",
             "imageFile": "feature_point_columellar_break_point-lateral(l).png",
             "description": "The most anterior or the highest point on the columella crest at the apex of the nostril. The point in the columellar region of the nose where the tip of the nose stops curving and the columellar linear structure begins, in the midline.",
             "usedInMeasurements": [
@@ -270,6 +270,48 @@
             "xVal": -15.01,
             "yVal": 19.36,
             "zVal": 85.94,
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "type": "Points"
+        },
+        {
+            "id": "Exocanthion/Lateral_Canthus_left",
+            "name": "Exocanthion/Lateral Canthus - left",
+            "abbrv": "ex_l",
+            "list": "Y",
+            "imageFile": "feature_point_exocanthion_left-frontal.png",
+            "description": "The outer corner of the left eye where the upper and lower eyelids meet. The point at the outer commissure of the eye fissure.",
+            "usedInMeasurements": [
+                "Left_Eye_Width",
+                "Left_Eye_Width_Surface",
+                "Outer_Intercanthal_Distance",
+                "Outer_Intercanthal_Distance_Surface"
+            ],
+            "xVal": 43.48,
+            "yVal": 22.78,
+            "zVal": 80.29,
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "type": "Points"
+        },
+        {
+            "id": "Exocanthion/Lateral_Canthus_right",
+            "name": "Exocanthion/Lateral Canthus - right",
+            "abbrv": "ex_r",
+            "list": "Y",
+            "imageFile": "feature_point_exocanthion_right-frontal.png",
+            "description": "The outer corner of the right eye where the upper and lower eyelids meet. The point at the outer commissure of the eye fissure.",
+            "usedInMeasurements": [
+                "Outer_Intercanthal_Distance",
+                "Outer_Intercanthal_Distance_Surface",
+                "Right_Eye_Width",
+                "Right_Eye_Width_Surface"
+            ],
+            "xVal": -42.58,
+            "yVal": 21.08,
+            "zVal": 81.38,
             "cameraX": "",
             "cameraY": "",
             "cameraZ": "",
@@ -442,7 +484,7 @@
             "id": "Most_Prominent_Point_of_Convexity",
             "name": "Most Prominent Point of Convexity",
             "abbrv": "pc",
-            "list": "Y",
+            "list": "F",
             "imageFile": "feature_point_most_prominent_point_of_convexity-frontal.png",
             "description": "The most prominent point of convexity on the nose. This feature point is for the calculation of the degree of deviation in C-type nasal deformities.",
             "usedInMeasurements": [
@@ -1032,6 +1074,52 @@
     ],
     "measurements": [
         {
+            "id": "Ala/Alar_Length_(left)",
+            "name": "Ala/Alar Length (left)",
+            "surfaceDistId": "Ala/Alar_Length_(left)_Surface",
+            "imageFile": "measurement_distance_left_alar_length-basal.png",
+            "description": "Distance between 'Pronasale/Tip (prn)' and 'Alar Curvature - left (ac_l)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Pronasale/Tip",
+                "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_left"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "31.78",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Prn.x-Ac_l.x\\right)^2+\\left(Prn.y-Ac_l.y\\right)^2+\\left(Prn.z-Ac_l.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Ala/Alar_Length_(right)",
+            "name": "Ala/Alar Length (right)",
+            "surfaceDistId": "Ala/Alar_Length_(right)_Surface",
+            "imageFile": "measurement_distance_right_alar_length-basal.png",
+            "description": "Distance between 'Pronasale/Tip (prn)' and 'Alar Curvature - right (ac_r)' ",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Pronasale/Tip",
+                "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_right"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "38.44",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Prn.x-Ac_r.x\\right)^2+\\left(Prn.y-Ac_r.y\\right)^2+\\left(Prn.z-Ac_r.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
             "id": "Alar_Base_Width",
             "name": "Alar Base Width",
             "surfaceDistId": "Alar_Base_Width_Surface",
@@ -1044,16 +1132,8 @@
                 "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_left",
                 "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "38.81",
             "cameraX": "",
             "cameraY": "",
@@ -1244,7 +1324,7 @@
                     "z": 104.56
                 }
             ],
-            "list": "F",
+            "list": "Y",
             "usedFeatures": [
                 "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_left",
                 "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_right"
@@ -1254,6 +1334,29 @@
             "cameraY": "",
             "cameraZ": "",
             "formula": "",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Base_Bony_Width",
+            "name": "Base Bony Width",
+            "surfaceDistId": "Base_Bony_Width_Surface",
+            "imageFile": "measurement_distance_base_bony_width-frontal.png",
+            "description": "Distance between 'Nasal Parenthesis - left (np_l)' and 'Nasal Parenthesis - right (np_r)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Nasal_Parenthesis_left",
+                "Nasal_Parenthesis_right"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "40.64",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Np_l.x-Np_r.x\\right)^2+\\left(Np_l.y-Np_r.y\\right)^2+\\left(Np_l.z-Np_r.z\\right)^2}$$",
             "rangeStart": "1",
             "rangeEnd": "200"
         },
@@ -1270,16 +1373,8 @@
                 "Subnasale",
                 "Columellar_Break_Point"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "10.82",
             "cameraX": "",
             "cameraY": "",
@@ -1350,7 +1445,7 @@
                     "z": 118.5
                 }
             ],
-            "list": "F",
+            "list": "Y",
             "usedFeatures": [
                 "Subnasale",
                 "Columellar_Break_Point"
@@ -1376,16 +1471,8 @@
                 "Subnasale_left",
                 "Subnasale_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "10.57",
             "cameraX": "",
             "cameraY": "",
@@ -1456,7 +1543,7 @@
                     "z": 108.12
                 }
             ],
-            "list": "F",
+            "list": "Y",
             "usedFeatures": [
                 "Subnasale_left",
                 "Subnasale_right"
@@ -1466,6 +1553,75 @@
             "cameraY": "",
             "cameraZ": "",
             "formula": "",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Face_Length/Height",
+            "name": "Face Length/Height",
+            "surfaceDistId": "Face_Length/Height_Surface",
+            "imageFile": "measurement_distance_facial_height-frontal.png",
+            "description": "Distance between 'Trichion (tr)' and 'Menton/Gnathion (me)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Trichion",
+                "Menton/Gnathion"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "181.50",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Tr.x-Me.x\\right)^2+\\left(Tr.y-Me.y\\right)^2+\\left(Tr.z-Me.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Face_Width",
+            "name": "Face Width",
+            "surfaceDistId": "Face_Width_Surface",
+            "imageFile": "measurement_distance_face_width-frontal.png",
+            "description": "Distance from 'Zygion - left (zy_l)' to 'Zygion - right (zy_r)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Zygion_right",
+                "Zygion_left"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "124.89",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Zy_l.x-Zy_r.x\\right)^2+\\left(Zy_l.y-Zy_r.y\\right)^2+\\left(Zy_l.z-Zy_r.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Height_of_the_Mandible/Chin_Height",
+            "name": "Height of the Mandible",
+            "surfaceDistId": "Height_of_the_Mandible/Chin_Height_Surface",
+            "imageFile": "measurement_distance_chin_height-lateral(l).png",
+            "description": "Distance between 'Menton/Gnathion (me)' and 'Stomion (sto)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Menton/Gnathion",
+                "Stomion"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "45.93",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Me.x-Sto.x\\right)^2+\\left(Me.y-Sto.y\\right)^2+\\left(Me.z-Sto.z\\right)^2}$$",
             "rangeStart": "1",
             "rangeEnd": "200"
         },
@@ -1482,16 +1638,8 @@
                 "Alare/Alar_Flare_left",
                 "Alare/Alar_Flare_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "38.47",
             "cameraX": "",
             "cameraY": "",
@@ -1702,7 +1850,7 @@
                     "z": 105.82
                 }
             ],
-            "list": "F",
+            "list": "Y",
             "usedFeatures": [
                 "Alare/Alar_Flare_left",
                 "Alare/Alar_Flare_right"
@@ -1712,6 +1860,98 @@
             "cameraY": "",
             "cameraZ": "",
             "formula": "",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Lower_Facial_Height",
+            "name": "Lower Facial Height",
+            "surfaceDistId": "Lower_Facial_Height_Surface",
+            "imageFile": "measurement_distance_lower_facial_height-frontal.png",
+            "description": "Distance between 'Subnasale (sn)' and 'Menton/Gnathion (me)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Subnasale",
+                "Menton/Gnathion"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "68.36",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Me.x-Sn.x\\right)^2+\\left(Me.y-Sn.y\\right)^2+\\left(Me.z-Sn.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Lower_Lip_Height",
+            "name": "Lower Lip Height",
+            "surfaceDistId": "Lower_Lip_Height_Surface",
+            "imageFile": "measurement_distance_lower_lip_height-frontal.png",
+            "description": "Distance from 'Sublabiale (sl)' to 'Stomion (sto)', when the mouth is in a neutral position",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Stomion",
+                "Sublabiale/Mentolabial_Sulcus"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "17.33",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Sl.x-Sto.x\\right)^2+\\left(Sl.y-Sto.y\\right)^2+\\left(Sl.z-Sto.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Mid-Facial_Height",
+            "name": "Mid-Facial Height",
+            "surfaceDistId": "Mid-Facial_Height_Surface",
+            "imageFile": "measurement_distance_mid_facial_height-frontal.png",
+            "description": "Distance between 'Subnasale (sn)' and 'Glabella (g)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Subnasale",
+                "Glabella"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "54.18",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(G.x-Sn.x\\right)^2+\\left(G.y-Sn.y\\right)^2+\\left(G.z-Sn.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Mouth/Lips_Width",
+            "name": "Mouth/Lips Width",
+            "surfaceDistId": "Mouth/Lips_Width_Surface",
+            "imageFile": "measurement_distance_mouth_width-basal.png",
+            "description": "Distance from 'Cheilion - left (ch_l)' to 'Cheilion - right (ch_r)', when the mouth is in a neutral position.",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Cheilion_left",
+                "Cheilion_right"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "49.82",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Ch_l.x-Ch_r.x\\right)^2+\\left(Ch_l.y-Ch_r.y\\right)^2+\\left(Ch_l.z-Ch_r.z\\right)^2}$$",
             "rangeStart": "1",
             "rangeEnd": "200"
         },
@@ -1728,16 +1968,8 @@
                 "Pronasale/Tip",
                 "Nasion/Radix"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "35.28",
             "cameraX": "",
             "cameraY": "",
@@ -1933,7 +2165,7 @@
                     "z": 105.37
                 }
             ],
-            "list": "F",
+            "list": "Y",
             "usedFeatures": [
                 "Pronasale/Tip",
                 "Nasion/Radix"
@@ -1943,6 +2175,29 @@
             "cameraY": "",
             "cameraZ": "",
             "formula": "",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Nasal_Root_Width",
+            "name": "Nasal Root Width",
+            "surfaceDistId": "Nasal_Root_Width_Surface",
+            "imageFile": "measurement_distance_nasal_root_width-frontal.png",
+            "description": "Distance between 'Maxilloanteriorale - left (mf_l)' and 'Maxilloanteriorale - right (mf_r)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Maxilloanteriorale_left",
+                "Maxilloanteriorale_right"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "13.80",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Mf_l.x-Mf_r.x\\right)^2+\\left(Mf_l.y-Mf_r.y\\right)^2+\\left(Mf_l.z-Mf_r.z\\right)^2}$$",
             "rangeStart": "1",
             "rangeEnd": "200"
         },
@@ -1959,16 +2214,8 @@
                 "Subnasale",
                 "Pronasale/Tip"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "18.23",
             "cameraX": "",
             "cameraY": "",
@@ -2078,7 +2325,7 @@
                     "z": 123.12
                 }
             ],
-            "list": "F",
+            "list": "Y",
             "usedFeatures": [
                 "Subnasale",
                 "Pronasale/Tip"
@@ -2090,6 +2337,228 @@
             "formula": "",
             "rangeStart": "1",
             "rangeEnd": "200"
+        },
+        {
+            "id": "Nose_Height",
+            "name": "Nose Height",
+            "surfaceDistId": "Nose_Height_Surface",
+            "imageFile": "measurement_distance_nose_height-lateral(l).png",
+            "description": "Distance between 'Subnasale (sn)' and 'Nasion (n)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Subnasale",
+                "Nasion/Radix"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "38.33",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Sn.x-N.x\\right)^2+\\left(Sn.y-N.y\\right)^2+\\left(Sn.z-N.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Premaxilla_-_left",
+            "name": "Premaxilla - left",
+            "surfaceDistId": "Premaxilla_-_left_Surface",
+            "imageFile": "measurement_distance_left_premaxilla-lateral(l).png",
+            "description": "Distance between 'Subnasale (sn)' and 'Alar Base Junction Left (ac_l)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Subnasale",
+                "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_left"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "20.81",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Sn.x-Ac_l.x\\right)^2+\\left(Sn.y-Ac_l.y\\right)^2+\\left(Sn.z-Ac_l.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Premaxilla_-_right",
+            "name": "Premaxilla - right",
+            "surfaceDistId": "Premaxilla_-_right_Surface",
+            "imageFile": "measurement_distance_right_premaxilla-lateral(r).png",
+            "description": "Distance between 'Subnasale (sn)' and 'Alar Base Junction Right (ac_r)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Subnasale",
+                "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_right"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "26.56",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Sn.x-Ac_r.x\\right)^2+\\left(Sn.y-Ac_r.y\\right)^2+\\left(Sn.z-Ac_r.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Radix_Depth",
+            "name": "Radix Depth",
+            "surfaceDistId": "Radix_Depth_Surface",
+            "imageFile": "measurement_distance_radix_depth-lateral(l).png",
+            "description": "Distance between 'Nasal/Radix (n)' and 'Supratarsal Crease (sc_l)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Nasion/Radix",
+                "Supratarsal_Crease_left"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "39.58",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Sc_l.x-N.x\\right)^2+\\left(Sc_l.y-N.y\\right)^2+\\left(Sc_l.z-N.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Subnasal_Width",
+            "name": "Subnasal Width",
+            "surfaceDistId": "Subnasal_Width_Surface",
+            "imageFile": "measurement_distance_subnasal_width-basal.png",
+            "description": "Distance between 'Subalare - right (sbal_r)' and 'Subalare - left (sbal_l)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Subalare_left",
+                "Subalare_right"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "32.78",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Sbal_r.x-Sbal_l.x\\right)^2+\\left(Sbal_r.y-Sbal_l.y\\right)^2+\\left(Sbal_r.z-Sbal_l.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Tip/Lobule_Width",
+            "name": "Tip/Lobule Width",
+            "surfaceDistId": "Tip/Lobule_Width_Surface",
+            "imageFile": "measurement_distance_lobule_width-frontal.png",
+            "description": "Distance from 'Tip Defining Point - left (td_l)' to 'Tip Defining Point - right (td_r)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Tip_Defining_Point_left",
+                "Tip_Defining_Point_right"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "18.29",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Td_l.x-Td_r.x\\right)^2+\\left(Td_l.y-Td_r.y\\right)^2+\\left(Td_l.z-Td_r.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Upper_Facial_Height",
+            "name": "Upper Facial Height",
+            "surfaceDistId": "Upper_Facial_Height_Surface",
+            "imageFile": "measurement_distance_upper_facial_height-frontal.png",
+            "description": "Distance between 'Trichion (tr)' and 'Glabella (g)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Trichion",
+                "Glabella"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "60.22",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(G.x-Tr.x\\right)^2+\\left(G.y-Tr.y\\right)^2+\\left(G.z-Tr.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Upper_Lip_Height",
+            "name": "Upper Lip Height",
+            "surfaceDistId": "Upper_Lip_Height_Surface",
+            "imageFile": "measurement_distance_upper_lip_height-frontal.png",
+            "description": "Distance between 'Subnasale (sn)' and 'Stomion (sto)'",
+            "type": "Distances",
+            "group": "Distances",
+            "list": "N",
+            "usedFeatures": [
+                "Stomion",
+                "Subnasale"
+            ],
+            "beginningPoint": "",
+            "endPoint": "",
+            "value": "22.49",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\sqrt{\\left(Sn.x-Sto.x\\right)^2+\\left(Sn.y-Sto.y\\right)^2+\\left(Sn.z-Sto.z\\right)^2}$$",
+            "rangeStart": "1",
+            "rangeEnd": "200"
+        },
+        {
+            "id": "Degree_of_Deviation_(C-type)",
+            "name": "Degree of Deviation (C-type)",
+            "imageFile": "measurement_angle_degree_of_deviation_c_type-frontal.png",
+            "description": "(A) glabella, (B) nasion, (C) nasal tip, (D) middle point of upper lip, (E) most prominent point of the convexity, C - type crooked nose angle: the angle between BE and EC lines.",
+            "type": "Angles",
+            "group": "Angles",
+            "list": "N",
+            "usedFeatures": [
+                "Most_Prominent_Point_of_Convexity",
+                "Nasion/Radix",
+                "Pronasale/Tip"
+            ],
+            "value": "132.93",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "V1=$$<\\left(N.x-Pc.x\\right),\\left(N.y-Pc.y\\right),\\left(N.z-Pc.z\\right)>$$ V2=$$<\\left(Pc.x-Prn.x\\right),\\left(Pc.y-Prn.y\\right),\\left(Pc.z-Prn.z\\right)>$$$$\\theta=\\cos^{-1}(\\frac{V1\\bullet V2}{|V1||V2|})$$"
+        },
+        {
+            "id": "Degree_of_Deviation_(I-type)",
+            "name": "Degree of Deviation (I-type)",
+            "imageFile": "measurement_angle_degree_of_deviation_i_type-frontal.png",
+            "description": "(A) glabella, (B) nasion, (C) most prominent point of the nasal tip, (D) middle point of upper lip, I - type crooked nose angle: the angle between BD and BC lines.",
+            "type": "Angles",
+            "group": "Angles",
+            "list": "N",
+            "usedFeatures": [
+                "Labrale_Superius",
+                "Nasion/Radix",
+                "Pronasale/Tip"
+            ],
+            "value": "37.97",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "V1=$$<\\left(N.x-Ls.x\\right),\\left(N.y-Ls.y\\right),\\left(N.z-Ls.z\\right)>$$ V2=$$<\\left(N.x-Prn.x\\right),\\left(N.y-Prn.y\\right),\\left(N.z-Prn.z\\right)>$$$$\\theta=\\cos^{-1}(\\frac{V1\\bullet V2}{|V1||V2|})$$"
         },
         {
             "id": "Interalar_Angle",
@@ -2116,6 +2585,46 @@
             "formula": "V1=$$<\\left(Al_l.x-Prn.x\\right),\\left(Al_l.y-Prn.y\\right),\\left(Al_l.z-Prn.z\\right)>$$ V2=$$<\\left(Prn.x-Al_r.x\\right),\\left(Prn.y-Al_r.y\\right),\\left(Prn.z-Al_r.z\\right)>$$$$\\theta=\\cos^{-1}(\\frac{V1\\bullet V2}{|V1||V2|})$$"
         },
         {
+            "id": "Interaxial_Angle_(Nostril_Inclination)",
+            "name": "Interaxial Angle (Nostril Inclination)",
+            "imageFile": "measurement_angle_nostril_inclination_with_midline-basal.png",
+            "description": "Angle between 'Anterior Point of Nostril/Columella Junction left (stn_l))' to 'Posterior Point of Nostril - left (itn_l)' and 'Anterior Point of Nostril/Columella Junction right (stn_r)' to 'Posterior Point of Nostril - right (itn_r)' Formed at the apex where the two nostril axes meet; it is closely related to the nostril inclination",
+            "type": "Angles",
+            "group": "Angles",
+            "list": "N",
+            "usedFeatures": [
+                "Posterior/Inferior_Point_of_Nostril_left",
+                "Anterior/Superior_Point_of_Nostril/Columella_Point_left",
+                "Anterior/Superior_Point_of_Nostril/Columella_Point_right",
+                "Posterior/Inferior_Point_of_Nostril_right"
+            ],
+            "value": "59.01",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "V1=$$<\\left(Stn_l.x-Itn_l.x\\right),\\left(Stn_l.y-Itn_l.y\\right),\\left(Stn_l.z-Itn_l.z\\right)>$$ V2=$$<\\left(Stn_r.x-Itn_r.x\\right),\\left(Stn_r.y-Itn_r.y\\right),\\left(Stn_r.z-Itn_r.z\\right)>$$$$\\theta=\\cos^{-1}(\\frac{V1\\bullet V2}{|V1||V2|})$$"
+        },
+        {
+            "id": "Mentocervical_Angle",
+            "name": "Mentocervical Angle",
+            "imageFile": "measurement_angle_mentocervical_angle-lateral(l).png",
+            "description": "The angle between 'Pronasale/Tip (prn)' to 'Pogonion (pg)' and 'Menton/Gnathion (me)' to 'Cervical Point (c)'",
+            "type": "Angles",
+            "group": "Angles",
+            "list": "N",
+            "usedFeatures": [
+                "Pogonion",
+                "Pronasale/Tip",
+                "Menton/Gnathion",
+                "Cervical_Point"
+            ],
+            "value": "13.53",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "V1=$$<\\left(Prn.x-Pg.x\\right),\\left(Prn.y-Pg.y\\right),\\left(Prn.z-Pg.z\\right)>$$ V2=$$<\\left(C.x-Me.x\\right),\\left(C.y-Me.y\\right),\\left(C.z-Me.z\\right)>$$$$\\theta=\\cos^{-1}(\\frac{V1\\bullet V2}{|V1||V2|})$$"
+        },
+        {
             "id": "Nasal_Tip_Angle",
             "name": "Nasal Tip Angle",
             "imageFile": "measurement_angle_nasal_tip_angle-lateral(l).png",
@@ -2138,6 +2647,25 @@
             "cameraY": "",
             "cameraZ": "",
             "formula": "V1=$$<\\left(N.x-Prn.x\\right),\\left(N.y-Prn.y\\right),\\left(N.z-Prn.z\\right)>$$ V2=$$<\\left(Prn.x-Sn.x\\right),\\left(Prn.y-Sn.y\\right),\\left(Prn.z-Sn.z\\right)>$$$$\\theta=\\cos^{-1}(\\frac{V1\\bullet V2}{|V1||V2|})$$"
+        },
+        {
+            "id": "Nasofacial_Angle",
+            "name": "Nasofacial Angle",
+            "imageFile": "measurement_angle_nasofacial_angle-lateral(l).png",
+            "description": "The angle between 'Nasion (n)' to 'Tip/Pronasale (prn)' and 'Nasion (n)' to 'Pogonion (pg)'",
+            "type": "Angles",
+            "group": "Angles",
+            "list": "N",
+            "usedFeatures": [
+                "Pogonion",
+                "Nasion/Radix",
+                "Pronasale/Tip"
+            ],
+            "value": "40.83",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "V1=$$<\\left(N.x-Pg.x\\right),\\left(N.y-Pg.y\\right),\\left(N.z-Pg.z\\right)>$$ V2=$$<\\left(N.x-Prn.x\\right),\\left(N.y-Prn.y\\right),\\left(N.z-Prn.z\\right)>$$$$\\theta=\\cos^{-1}(\\frac{V1\\bullet V2}{|V1||V2|})$$"
         },
         {
             "id": "Nasofrontal_Angle",
@@ -2165,7 +2693,7 @@
             "description": "The angle between 'Pronasale/Tip (prn)' to 'Subnasale (sn)' and 'Subnasale (sn)' to 'Labrale Superius (ls)'",
             "type": "Angles",
             "group": "Angles",
-            "list": "F",
+            "list": "Y",
             "usedFeatures": [
                 "Subnasale",
                 "Pronasale/Tip",
@@ -2181,6 +2709,146 @@
             "cameraY": "",
             "cameraZ": "",
             "formula": "V1=$$<\\left(Prn.x-Sn.x\\right),\\left(Prn.y-Sn.y\\right),\\left(Prn.z-Sn.z\\right)>$$ V2=$$<\\left(Ls.x-Prn.x\\right),\\left(Ls.y-Prn.y\\right),\\left(Ls.z-Prn.z\\right)>$$$$\\theta=\\cos^{-1}(\\frac{V1\\bullet V2}{|V1||V2|})$$"
+        },
+        {
+            "id": "Nasomental_Angle",
+            "name": "Nasomental Angle",
+            "imageFile": "measurement_angle_nasomental_angle-lateral(l).png",
+            "description": "The angle between 'Nasion (n)' to 'Pronasale/Tip (prn)' and 'Pronasale/Tip (prn)' to 'Pogonion (pg)'",
+            "type": "Angles",
+            "group": "Angles",
+            "list": "N",
+            "usedFeatures": [
+                "Nasion/Radix",
+                "Pronasale/Tip",
+                "Pogonion"
+            ],
+            "value": "139.17",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "V1=$$<\\left(Prn.x-N.x\\right),\\left(Prn.y-N.y\\right),\\left(Prn.z-N.z\\right)>$$ V2=$$<\\left(Prn.x-Pg.x\\right),\\left(Prn.y-Pg.y\\right),\\left(Prn.z-Pg.z\\right)>$$$$\\theta=\\cos^{-1}(\\frac{V1\\bullet V2}{|V1||V2|})$$"
+        },
+        {
+            "id": "Total_Facial_Convexity_Angle",
+            "name": "Total Facial Convexity Angle",
+            "imageFile": "measurement_angle_total_facial_convexity_angle-lateral(l).png",
+            "description": "Angle between 'Glabella (g)' to 'Pronasale/Tip (prn)' and 'Pronasale/Tip (prn)' to 'Pogonion (pg)'",
+            "type": "Angles",
+            "group": "Angles",
+            "list": "N",
+            "usedFeatures": [
+                "Pronasale/Tip",
+                "Glabella",
+                "Pogonion"
+            ],
+            "linePointsOrder": [
+                "Glabella",
+                "Pronasale/Tip",
+                "Pogonion"
+            ],
+            "value": "130.78",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "V1=$$<\\left(G.x-Prn.x\\right),\\left(G.y-Prn.y\\right),\\left(G.z-Prn.z\\right)>$$ V2=$$<\\left(Pg.x-Prn.x\\right),\\left(Pg.y-Prn.y\\right),\\left(Pg.z-Prn.z\\right)>$$$$\\theta=\\cos^{-1}(\\frac{V1\\bullet V2}{|V1||V2|})$$"
+        },
+        {
+            "id": "Lobule_-_Base_Ratio",
+            "name": "Lobule - Base Ratio",
+            "imageFile": "measurement_ratio_lobule_base_ratio-basal.png",
+            "description": "Calculated by dividing the width of the lobule by the width of the base of the nose.",
+            "type": "Ratios",
+            "group": "Ratios",
+            "list": "N",
+            "usedFeatures": [
+                "Tip_Defining_Point_left",
+                "Tip_Defining_Point_right",
+                "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_left",
+                "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_right"
+            ],
+            "value": "0.43",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\frac{\\sqrt{\\left(Td_r.x-Td_l.x\\right)^2+\\left(Td_r.y-Td_l.y\\right)^2+\\left(Td_r.z-Td_l.z\\right)^2}}{\\sqrt{\\left(Ac_r.x-Ac_l.x\\right)^2+\\left(Ac_r.y-Ac_l.y\\right)^2+\\left(Ac_r.z-Ac_l.z\\right)^2}}$$"
+        },
+        {
+            "id": "Nasal_Tip_Projection:_Baum",
+            "name": "Nasal Tip Projection: Baum",
+            "imageFile": "measurement_ratio_nasal_tip_projection_baum-lateral(l).png",
+            "description": "The distance from the Nasion (n) to the point that creates a right triangle between with the Nasion (n) and the Pronasale (prn) divided by the distance from the Pronasale (prn) to this point.",
+            "type": "Ratios",
+            "group": "Ratios",
+            "list": "N",
+            "usedFeatures": [
+                "Nasion/Radix",
+                "Pronasale/Tip",
+                "Subnasale"
+            ],
+            "value": "1.52",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "BD=$$\\frac{|Prn-Sn|\\times|Prn-N|}{|N-Sn|}$$ AD=$$\\sqrt{\\left(N.x-Prn.x\\right)^2+\\left(N.y-Prn.y\\right)^2+\\left(N.z-Prn.z\\right)^2}$$ $$BD^2+AB^2=AD^2$$ AB=$$\\sqrt{AD^2-BD^2}$$ Projection=$$\\frac{AB}{BD}$$"
+        },
+        {
+            "id": "Nasal_Tip_Projection:_Byrd_and_Hobar",
+            "name": "Nasal Tip Projection: Byrd and Hobar",
+            "imageFile": "measurement_ratio_nasal_tip_projection_byrd&hobar-lateral(l).png",
+            "description": "The distance from the Nasion (n) to the Labiale Superius (ls) divided by the distance from the Pronasale (prn) to the Alar Crease (ac).",
+            "type": "Ratios",
+            "group": "Ratios",
+            "list": "N",
+            "usedFeatures": [
+                "Pronasale/Tip",
+                "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_left",
+                "Labrale_Superius",
+                "Nasion/Radix"
+            ],
+            "value": "0.64",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "AT=$$\\sqrt{\\left(Prn.x-Ac_l.x\\right)^2+\\left(Prn.y-Ac_l.y\\right)^2+\\left(Prn.z-Ac_l.z\\right)^2}$$ 2A=$$\\frac{|Prn-Ls|\\times|Prn-N|}{|N-Ls|}$$ Projection=$$\\frac{2A}{AT}$$"
+        },
+        {
+            "id": "Nasal_Tip_Projection:_Crumley_and_Lanser_I",
+            "name": "Nasal Tip Projection: Crumley and Lanser I",
+            "imageFile": "measurement_ratio_nasal_tip_projection_crumley&lanser1-lateral(l).png",
+            "description": "The length of a line from the Nasion (n) to the Labiale Superius (ls) divided by the perpendicular distance from this line to the Pronasale (prn).",
+            "type": "Ratios",
+            "group": "Ratios",
+            "list": "N",
+            "usedFeatures": [
+                "Nasion/Radix",
+                "Labrale_Superius",
+                "Pronasale/Tip"
+            ],
+            "value": "2.76",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "AE=$$\\sqrt{\\left(N.x-Ls.x\\right)^2+\\left(N.y-Ls.y\\right)^2+\\left(N.z-Ls.z\\right)^2}$$ BD=$$\\frac{|Prn-Ls|\\times|Prn-N|}{|N-Ls|}$$ Projection=$$\\frac{AE}{BD}$$"
+        },
+        {
+            "id": "Nasal_Tip_Projection:_Crumley_and_Lanser_II",
+            "name": "Nasal Tip Projection: Crumley and Lanser II",
+            "imageFile": "measurement_ratio_nasal_tip_projection_crumley&lanser2-lateral(l).png",
+            "description": "The length of a line from the Nasion (n) to the Menton/Gnathion (me) divided by the perpendicular distance from the Pronasale (prn) to this line.",
+            "type": "Ratios",
+            "group": "Ratios",
+            "list": "N",
+            "usedFeatures": [
+                "Nasion/Radix",
+                "Menton/Gnathion",
+                "Pronasale/Tip"
+            ],
+            "value": "4.80",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "AZ=$$\\sqrt{\\left(N.x-Me.x\\right)^2+\\left(N.y-Me.y\\right)^2+\\left(N.z-Me.z\\right)^2}$$ YD=$$\\frac{|Prn-Me|\\times|Prn-N|}{|N-Me|}$$ Projection=$$\\frac{AZ}{YD}$$"
         },
         {
             "id": "Nasal_Tip_Projection:_Goode",
@@ -2200,6 +2868,49 @@
             "cameraY": "",
             "cameraZ": "",
             "formula": "$$\\frac{\\sqrt{\\left(Ac_l.x-Prn.x\\right)^2+\\left(Ac_l.y-Prn.y\\right)^2+\\left(Ac_l.z-Prn.z\\right)^2}}{\\sqrt{\\left(Prn.x-N.x\\right)^2+\\left(Prn.y-N.y\\right)^2+\\left(Prn.z-N.z\\right)^2}}$$"
+        },
+        {
+            "id": "Nasal_Tip_Projection:_Powell_and_Humphries",
+            "name": "Nasal Tip Projection: Powell and Humphries",
+            "imageFile": "measurement_ratio_nasal_tip_projection_powell&humphries-lateral(l).png",
+            "description": "The length of a line from Subnasale (sn) to Nasion (n) divided by the perpendicular distance from this line to Nasal Tip/Pronasale (prn).",
+            "type": "Ratios",
+            "group": "Ratios",
+            "list": "N",
+            "usedFeatures": [
+                "Nasion/Radix",
+                "Subnasale",
+                "Pronasale/Tip"
+            ],
+            "value": "2.11",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "AC=$$\\sqrt{\\left(N.x-Sn.x\\right)^2+\\left(N.y-Sn.y\\right)^2+\\left(N.z-Sn.z\\right)^2}$$ BD=$$\\frac{|Prn-Sn|\\times|Prn-N|}{|N-Sn|}$$ Projection=$$\\frac{AC}{BD}$$"
+        },
+        {
+            "id": "Nasal_Tip_Projection:_Simons",
+            "name": "Nasal Tip Projection: Simons",
+            "imageFile": "measurement_ratio_nasal_tip_projection_simons-lateral(l).png",
+            "description": "The distance from Subnasale (sn) to Nasal Tip/Pronasale (prn) divided by the distance from Subnasale (sn) to Labiale Superius (ls).",
+            "type": "Ratios",
+            "group": "Ratios",
+            "list": "N",
+            "usedFeatures": [
+                "Subnasale",
+                "Pronasale/Tip",
+                "Labrale_Superius"
+            ],
+            "linePointsOrder": [
+                "Labrale_Superius",
+                "Subnasale",
+                "Pronasale/Tip"
+            ],
+            "value": "0.87",
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "formula": "$$\\frac{\\sqrt{\\left(Sn.x-Prn.x\\right)^2+\\left(Sn.y-Prn.y\\right)^2+\\left(Sn.z-Prn.z\\right)^2}}{\\sqrt{\\left(Sn.x-Ls.x\\right)^2+\\left(Sn.y-Ls.y\\right)^2+\\left(Sn.z-Ls.z\\right)^2}}$$"
         },
         {
             "id": "Nasal_Width-Length_Ratio",
