@@ -209,6 +209,92 @@
             "type": "Points"
         },
         {
+            "id": "Endocanthion/Medial_Canthus_left",
+            "name": "Endocanthion/Medial Canthus - left",
+            "abbrv": "en_l",
+            "list": "Y",
+            "imageFile": "feature_point_endocanthion_left-frontal.png",
+            "description": "The inner corner of the left eye where the upper and lower eyelids meet. The point at the inner commissure of the eye fissure.",
+            "usedInMeasurements": [
+                "(Inner)_Intercanthal_Distance/Width",
+                "(Inner)_Intercanthal_Distance/Width_Surface",
+                "Left_Eye_Width",
+                "Left_Eye_Width_Surface",
+                "Nasal_Width–Intercanthal_Distance_Ratio"
+            ],
+            "xVal": 17.71,
+            "yVal": 20.73,
+            "zVal": 85.89,
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "type": "Points"
+        },
+        {
+            "id": "Endocanthion/Medial_Canthus_right",
+            "name": "Endocanthion/Medial Canthus - right",
+            "abbrv": "en_r",
+            "list": "Y",
+            "imageFile": "feature_point_endocanthion_right-frontal.png",
+            "description": "The inner corner of the right eye where the upper and lower eyelids meet. The point at the inner commissure of the eye fissure.",
+            "usedInMeasurements": [
+                "(Inner)_Intercanthal_Distance/Width",
+                "(Inner)_Intercanthal_Distance/Width_Surface",
+                "Right_Eye_Width",
+                "Right_Eye_Width_Surface",
+                "Nasal_Width–Intercanthal_Distance_Ratio"
+            ],
+            "xVal": -15.26,
+            "yVal": 20.73,
+            "zVal": 85.78,
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "type": "Points"
+        },
+        {
+            "id": "Exocanthion/Lateral_Canthus_left",
+            "name": "Exocanthion/Lateral Canthus - left",
+            "abbrv": "ex_l",
+            "list": "Y",
+            "imageFile": "feature_point_exocanthion_left-frontal.png",
+            "description": "The outer corner of the left eye where the upper and lower eyelids meet. The point at the outer commissure of the eye fissure.",
+            "usedInMeasurements": [
+                "Left_Eye_Width",
+                "Left_Eye_Width_Surface",
+                "Outer_Intercanthal_Distance",
+                "Outer_Intercanthal_Distance_Surface"
+            ],
+            "xVal": 46.92,
+            "yVal": 21.82,
+            "zVal": 76.76,
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "type": "Points"
+        },
+        {
+            "id": "Exocanthion/Lateral_Canthus_right",
+            "name": "Exocanthion/Lateral Canthus - right",
+            "abbrv": "ex_r",
+            "list": "Y",
+            "imageFile": "feature_point_exocanthion_right-frontal.png",
+            "description": "The outer corner of the right eye where the upper and lower eyelids meet. The point at the outer commissure of the eye fissure.",
+            "usedInMeasurements": [
+                "Outer_Intercanthal_Distance",
+                "Outer_Intercanthal_Distance_Surface",
+                "Right_Eye_Width",
+                "Right_Eye_Width_Surface"
+            ],
+            "xVal": -42.32,
+            "yVal": 23.37,
+            "zVal": 77.68,
+            "cameraX": "",
+            "cameraY": "",
+            "cameraZ": "",
+            "type": "Points"
+        },
+        {
             "id": "Glabella",
             "name": "Glabella",
             "abbrv": "g",
@@ -375,7 +461,7 @@
             "id": "Most_Prominent_Point_of_Convexity",
             "name": "Most Prominent Point of Convexity",
             "abbrv": "pc",
-            "list": "Y",
+            "list": "F",
             "imageFile": "feature_point_most_prominent_point_of_convexity-frontal.png",
             "description": "The most prominent point of convexity on the nose. This feature point is for the calculation of the degree of deviation in C-type nasal deformities.",
             "usedInMeasurements": [
@@ -977,16 +1063,8 @@
                 "Pronasale/Tip",
                 "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_left"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "26.97",
             "cameraX": "",
             "cameraY": "",
@@ -1008,16 +1086,8 @@
                 "Pronasale/Tip",
                 "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "25.87",
             "cameraX": "",
             "cameraY": "",
@@ -1039,16 +1109,8 @@
                 "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_left",
                 "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "30.66",
             "cameraX": "",
             "cameraY": "",
@@ -1070,16 +1132,8 @@
                 "Nasal_Parenthesis_left",
                 "Nasal_Parenthesis_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "34.29",
             "cameraX": "",
             "cameraY": "",
@@ -1101,16 +1155,8 @@
                 "Subnasale_left",
                 "Subnasale_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "8.94",
             "cameraX": "",
             "cameraY": "",
@@ -1132,16 +1178,8 @@
                 "Trichion",
                 "Menton/Gnathion"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "178.77",
             "cameraX": "",
             "cameraY": "",
@@ -1163,16 +1201,8 @@
                 "Zygion_right",
                 "Zygion_left"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "109.82",
             "cameraX": "",
             "cameraY": "",
@@ -1194,16 +1224,8 @@
                 "Menton/Gnathion",
                 "Stomion"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "40.94",
             "cameraX": "",
             "cameraY": "",
@@ -1225,16 +1247,8 @@
                 "Alare/Alar_Flare_left",
                 "Alare/Alar_Flare_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "20.88",
             "cameraX": "",
             "cameraY": "",
@@ -1256,16 +1270,8 @@
                 "Subnasale",
                 "Menton/Gnathion"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "62.96",
             "cameraX": "",
             "cameraY": "",
@@ -1287,16 +1293,8 @@
                 "Stomion",
                 "Sublabiale/Mentolabial_Sulcus"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "16.97",
             "cameraX": "",
             "cameraY": "",
@@ -1318,16 +1316,8 @@
                 "Subnasale",
                 "Glabella"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "61.63",
             "cameraX": "",
             "cameraY": "",
@@ -1349,16 +1339,8 @@
                 "Cheilion_left",
                 "Cheilion_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "38.95",
             "cameraX": "",
             "cameraY": "",
@@ -1380,16 +1362,8 @@
                 "Pronasale/Tip",
                 "Nasion/Radix"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "41.07",
             "cameraX": "",
             "cameraY": "",
@@ -1411,16 +1385,8 @@
                 "Maxilloanteriorale_left",
                 "Maxilloanteriorale_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "9.11",
             "cameraX": "",
             "cameraY": "",
@@ -1442,16 +1408,8 @@
                 "Subnasale",
                 "Pronasale/Tip"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "13.37",
             "cameraX": "",
             "cameraY": "",
@@ -1473,16 +1431,8 @@
                 "Subnasale",
                 "Nasion/Radix"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "49.51",
             "cameraX": "",
             "cameraY": "",
@@ -1504,16 +1454,8 @@
                 "Subnasale",
                 "Subalare_left"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "12.71",
             "cameraX": "",
             "cameraY": "",
@@ -1535,16 +1477,8 @@
                 "Subnasale",
                 "Subalare_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "9.57",
             "cameraX": "",
             "cameraY": "",
@@ -1566,16 +1500,8 @@
                 "Subnasale",
                 "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_left"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "21.41",
             "cameraX": "",
             "cameraY": "",
@@ -1597,16 +1523,8 @@
                 "Subnasale",
                 "Alar_Crest/Alar_Curvature/Alar_Base_Junction/Alar-Facial_Groove/Alar-Cheek_Junction/Alar_Crease_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "20.93",
             "cameraX": "",
             "cameraY": "",
@@ -1628,16 +1546,8 @@
                 "Nasion/Radix",
                 "Supratarsal_Crease_left"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "34.07",
             "cameraX": "",
             "cameraY": "",
@@ -1659,16 +1569,8 @@
                 "Subalare_left",
                 "Subalare_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "18.24",
             "cameraX": "",
             "cameraY": "",
@@ -1690,16 +1592,8 @@
                 "Pronasale/Tip",
                 "Supratip_Break_Point"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "9.14",
             "cameraX": "",
             "cameraY": "",
@@ -1721,16 +1615,8 @@
                 "Tip_Defining_Point_left",
                 "Tip_Defining_Point_right"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "12.97",
             "cameraX": "",
             "cameraY": "",
@@ -1752,16 +1638,8 @@
                 "Trichion",
                 "Glabella"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "59.39",
             "cameraX": "",
             "cameraY": "",
@@ -1783,16 +1661,8 @@
                 "Stomion",
                 "Subnasale"
             ],
-            "beginningPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
-            "endPoint": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-            },
+            "beginningPoint": "",
+            "endPoint": "",
             "value": "22.30",
             "cameraX": "",
             "cameraY": "",
